@@ -1,38 +1,668 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+@keyframes slideInFromLeft {
+    
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-}
+  
+
+
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: white;
+    min-height: 100vh;
+    font-family: Marcellus;
+    overflow-x: hidden ;
 }
 
-.App-link {
-  color: #61dafb;
+.spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    border-top-color: #666;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.Offer{
+   width: 100%;
+   margin: 0 auto;
+}
+.Offer ,button{
+    margin-top: 5vh;
+    background-color: white;
+    border:none;
+    font-size: 2vh;
+}
+.preloader {
+    background-color: #F5F5F5;
+    background-image: url(./images/image_processing.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 20%;
+    height: 100vh;
+    width:100%;
+    position: fixed;
+    z-index: 100;
+  }
+
+.introduction{
+    position: relative;
+    top:-40vh;
+    z-index: 1;
+    width:100%;
+    display: inline;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.introduction h4{   
+    font-size: 8vh;
+    text-align: center;
+    width:100%;
+    background: rgb(255, 255, 255, 0.1) !important;
+}
+
+  
+
+.Menu {
+    background-color: white;
+    max-height: 30vh;
+    min-width: 100%;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+.Menu h1 {
+    position: relative;
+    font-size: 8vw;;
+    height: auto;
+    float: left;
+    top: 5px;
+    left: 30px;
+    height: auto;
+    padding: 16px 32px;
+ }
+
+.Menu h3 {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    float: left;
+    left: -27px;
+    top: 16px;
+    font-style: italic;
+    padding: 16px 32px;
+
+
+}
+
+.logoimage {
+    
+    
+    margin-top: 92vh;
+    margin-left: 5vh;
+    position: fixed;
+    height: auto;
+    width: auto;
+    z-index: 2;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    
+}
+
+
+
+.logoimage img{
+    height: 3vh;
+    width: 3vh;
+    
+    margin: 0.5vh;
+    
+}
+
+
+
+
+.logoimage img:hover{
+
+    transform: scale(1.1);
+
+
+}
+
+.Menu ul {
+    position: relative;
+    float: right;
+    height: auto;
+}
+
+.Menu ul li {
+    display: inline-block;
+    float: right;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-right: 100px;
+    text-align: center;
+    transition: 0.7s;
+    padding: 16px 32px;
+ }
+
+.Menu ul li:hover {
+    background-color: #708090;
+    color: white;  
+}
+
+.active li {
+    color: white;  
+}
+
+.Banner {
+    background-color: white;
+    position: relative;
+    border-top: 3px solid #000;
+    
+}
+
+.Info {
+    background-color: white;
+    height: auto;
+    margin-top:180px;
+    position: relative;
+}
+
+
+.Info h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+    font-size: 3vh !important;
+}
+
+.Info h3 {
+    float: left;
+    position: relative;
+    top:600px;
+    font-size:20px;
+    padding: 10px;
+    
+}
+
+.YourPhoto {
+    float: left;
+    width: 20%;
+    height: 600px;
+    border: 5px solid #000;
+    margin-top: 100px;
+    margin-left:10%;
+}
+
+.Info p {
+    font-size: 26px;
+    position: relatieve;
+    margin-top: 400px;
+    color: black;
+    margin: 100px;
+    border-left-style: solid;
+    text-align: justify;
+    padding: 10px;
+    border-width: 10px 5px;
+    width: 50%;
+    float: left;
+}
+
+.Portfolio {
+    
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000000 !important;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .Portfolio img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
   }
+  
+  .Portfolio img:hover {
+    transform: scale(1.1);
+  }
+  
+.scrollport {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: #000 #fff;
+    scrollbar-width: thin;
+    width: 100%;
+}
+
+.Portfolio h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+    font-size: 3vh !important;
+}
+
+.Oferta {
+    background-color: #70890;
+    height: auto;
+}
+
+.Oferta h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+    font-size: 3vh !important;
+}
+
+
+
+.Oferta p {
+    font-size: 26px;
+    position: relatieve;
+    margin-top: 400px;
+    color: black;
+    margin: 100px;
+    padding: 10px;
+    border-width: 10px 5px;
+    width: 90%;
+    float: left;
+}
+
+.Summary {
+    margin-top:100px;
+    background-color: #70890;
+    height: auto;
+}
+
+.Summary h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+    font-size: 3vh !important;
+}
+
+
+.Kontakt h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+}
+
+
+
+.Kontakt {
+    margin-top:100px;
+    background-color: #70890;
+   
+}
+
+
+
+
+.Kontakt h1 {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 90%;
+    border-bottom-style: solid;
+    font-size: 3vh !important;
+}
+
+
+
+.Footer {
+    background-color: #70890;
+    
+}
+
+.Footer h1 {
+    float: left;
+    top: 5px;
+    left: 30px;
+    height: auto;
+    padding: 16px 32px;
+    position: relative;
+    left:90%;
+    bottom: 10vh;
+    font-size: 4vh !important;
+    border-bottom-style: none;
+    color:black
+}
+
+.Footer h1:hover{
+    color: #708090;
+}
+
+.Footer .links {
+    float: left;
+    position: relative;
+    left: 5%;
+    padding: 10px;
+    width: 100%;
+    text-align:center;
+    
+    color:black
+}
+.Footer .links h3{
+    font-size: 1vh !important;
+    text-align: right;
+}
+.Footer .links li{
+    font-size: 1vh !important;
+    list-style: none;
+
+    width:100%;
+}
+/* Slideshow */
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+    transition: 600ms opacity ease-in-out !important;
+}
+
+.slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+    transition: 600ms opacity ease-in-out !important;
+   
+}
+
+.slide {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+    transition: 600ms opacity ease-in-out !important;
+
+
+}
+
+/* Buttons */
+
+.slideshowDots {
+    text-align: center;
+}
+
+.slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 7px 0px;
+    background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+   background-color: #6a0dad;
+   
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+
+.col-8 input[type=submit] {
+    background-color: white !important;
+    border: solid 1px black !important;
+    float: left;
+    width:40%;
+    position: relative;
+    top: -51px;
+    left:30%;
+}
+
+.col-8 input[type=submit]:focus {
+    box-shadow: 0 0 5px #000;
+}
+
+
+    .col-8 input[type=submit]:hover {
+        background-color: #708090 !important;
+        border: solid 1px #708090 !important;
+        color: white
+    }
+
+    .col-8 input[type=text] {
+    border: solid 1px black !important;
+}
+
+.col-8 input[type=text]:focus {
+    border: solid 1px black !important;
+    box-shadow: 0 0 5px #708090;
+}
+
+.col-8 textarea {
+    border: solid 1px black !important;
+    float: left;
+    position: relative;
+    top: -51px;
+    
+}
+
+.col-8 textarea:focus {
+    box-shadow: 0 0 5px #708090;
+}
+
+.col-8 {
+    border-left: solid !important;
+    border-width: 10px 5px;
+    padding: 5px 3px;
+}
+
+.col-8 input[type=tel]{
+    border: solid 1px black !important ;
+    width:48%;
+    float:left;
+    position:relative;
+    top:-51px;
+    left: 52%
+}
+
+.col-8 input[type=tel]:focus {
+    box-shadow: 0 0 5px #708090;
+}
+
+.col-8 input[type=email]{
+    border: solid 1px black !important ;
+    width:48%;
+    float:left;
+    position:relative;
+}
+
+.col-8 input[type=email]:focus {
+    box-shadow: 0 0 5px #708090;
+}
+
+.backdrop {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000 !important;
+    background-color: rgba(0, 0, 0, 0.8);;
+    
+  }
+  
+
+  
+  .modal-content img {
+   
+    margin: 0;
+  }
+  
+  .delete-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh !important;
+    padding: 1rem;
+    position: absolute;
+    margin-top:-50vh;
+  }
+  
+  .close-btn {
+    background-color: #333 !important;
+    color: white;
+    position: absolute;
+    margin-top: -75vh;
+    border: none;
+    border-radius: 0vh;
+    width: 10vh;
+    cursor: pointer;
+  }
+
+  .delete-btn{
+    visibility: hidden;
+  }
+  
+  .prev-btn {
+    border: none;
+    position: absolute;
+    left: 3.5vh;
+    
+ 
+    font-size: 7vh !important;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 1vh 2vh !important;
+    transition: 0.4s;
+  }
+  
+  .next-btn {
+    border: none;
+    position: absolute;
+    right: 3.5vh;
+    font-size: 7vh !important;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 1vh 2vh !important;
+    transition: 0.4s;
+
+  }
+
+  .next-btn:hover{
+    background: rgb(112, 128, 144) !important;
+    border-radius: 5vh !important;
+    color:white !important;
+  }
+  .prev-btn:hover{
+    background: rgb(112, 128, 144) !important;
+    border-radius: 5vh !important;
+    color:white !important;
+  }
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; /* add this property to take up the full width */
+    
+  }
+  
+  .load-more {
+    margin-top: 20px;
+    border: none;
+
+    font-size: 2vh !important;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 1vh 2vh !important;
+    transition: 0.4s;
+  }
+
+  .load-more:hover{
+    background: rgb(112, 128, 144) !important;
+    border-radius: 5vh !important;
+    color:white !important;
+  }
+
+  .Offer h2{
+    display: inline-block;
+    padding: 2vh;
+    margin-left: 10vh!important;
+    
+    border-left: 1px solid #000;
+    font-size: 2vh
+  }
+
+@media only screen and (max-width: 480px){
+    .YourPhoto {
+        float: left;
+        width: 90%;
+        height: 600px;
+        border: 5px solid #000;
+        margin-top: 30px;
+        margin-left:5%;
+    }
+
+    .Offer{
+        margin-left:-20%;
+      }
+
+    
+    .Offer button{
+        margin-left:20%;
+    }
+
+    .Footer h1 {
+        left:70%;
+    }
+    
+
 }

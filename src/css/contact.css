@@ -1,0 +1,63 @@
+.captcha{
+  width: 20% ;
+  position: relative;
+  top: -30px;
+  transform:scale(0.95);
+  -webkit-transform:scale(0.95);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+}
+
+.form-check p {
+  display: inline-block; /* This makes the p element take up only as much width as necessary */
+  margin-left: 10px; /* Add some space between the checkbox and the label */
+}
+
+.form-check input[type="checkbox"] {
+  display: inline-block; /* This makes the checkbox and label appear on the same line */
+  vertical-align: middle; /* Align the checkbox vertically with the label */
+  z-index: 1;
+}
+
+.form-check-input[type="checkbox"] {
+  background-color: #fff; /* Ustaw białe tło checkboxa */
+  border-color: #ccc; /* Ustaw kolor obramowania checkboxa */
+}
+
+.form-check-input[type="checkbox"]:checked {
+  background-color: #000; /* Ustaw czarne tło w przypadku zaznaczenia checkboxa */
+}
+
+.form-check-input:focus {
+  outline: none; /* usuń obramowanie podczas skupienia */
+  box-shadow: none; /* usuń cień podczas skupienia */
+}
+
+.row {
+  width:100%;
+}
+
+.form-group.mx-auto {
+  display: flex; /* Use flexbox to align items */
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-start; /* Move the items to the left side */
+}
+@media screen and (max-width:680px) {
+    input::placeholder {
+      font-size: 12px;
+  }
+
+  textarea::placeholder {
+    font-size: 12px;
+  }
+  .captcha{
+    width: 20% ;
+    position: relative;
+    top: -30px;
+    transform:scale(0.85);
+    -webkit-transform:scale(0.85);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0; 
+    z-index: 1;
+  }
+}

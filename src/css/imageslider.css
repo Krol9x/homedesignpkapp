@@ -1,0 +1,90 @@
+.sliderStyles = {
+    height: 100%;
+    position: relative;
+    width:100%;
+    transition: 600ms opacity ease-in-out !important;
+
+}
+
+img{
+    width: 100%;
+}
+
+.leftArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 7vh !important;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 1vh 2vh !important;
+    transition: 0.4s;
+}
+
+.rightArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 7vh !important;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 1vh 2vh !important;
+    transition: 0.4s;
+}
+
+.rightArrowStyles:hover {
+   background: rgb(112, 128, 144) !important;
+   border-radius: 5vh !important;
+   color:white !important;
+}
+
+.leftArrowStyles:hover {
+    background: rgb(112, 128, 144) !important;
+    border-radius: 5vh !important;
+    color:white !important;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+
+    .leftArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 32px;
+        font-size: 16px;
+        color: #fff;
+        z-index: 1;
+        cursor: pointer;
+        color: black;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 16px;
+        transition: 0.4s;
+    }
+    
+    .rightArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 32px;
+        font-size: 16px;
+        color: #fff;
+        z-index: 1;
+        cursor: pointer;
+        color: black;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 8px 16px;
+        transition: 0.4s;
+    }
+
+}

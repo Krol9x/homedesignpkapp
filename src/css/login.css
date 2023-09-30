@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  .Login {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10000;
+    overflow-y: hidden !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Loginform {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  .Loginform h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+  
+  .Loginform input[type="email"],
+  .Loginform input[type="password"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff; /* Set background color to white */
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .Loginform input[type="email"]:focus,
+  .Loginform input[type="password"]:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Loginform button[type="submit"] {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0a0a23;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .Loginform button[type="submit"]:hover {
+    background-color: #000;
+  }
+
+  .primary {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .primary:hover {
+    background: rgb(112, 128, 144) !important;
+  }

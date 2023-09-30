@@ -1,0 +1,43 @@
+.App-header {
+  background-color: #D3D3D3;
+  min-height: 100vh;
+  color:red;
+}
+
+.Menu {
+    background-color: orange;
+    max-height: 25vh;
+    min-width: 100%;
+    position: fixed;
+    z-Index: 23;
+}
+
+.Banner {
+    background-color: yellow;
+    min-height: 100vh;
+}
+
+.Info {
+    background-color: blue;
+    min-height: 100vh;
+}
+
+.Portfolio {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.Oferta{
+    background-color: green;
+    min-height: 100vh;
+}
+
+.Kontakt {
+    background-color: pink;
+    min-height: 100vh;
+}
+
+.Footer {
+    background-color: blue;
+    min-height: 100vh;
+}

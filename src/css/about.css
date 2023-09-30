@@ -1,0 +1,147 @@
+/*
+.about{
+  height: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row .column{
+    margin-top:1vh ;
+    width: 40%;
+}
+.column .tabs{
+    display: flex;   
+}
+.single-tab{
+    cursor: pointer;
+}
+.single-tab h2{
+    display:block;
+    padding: 10px 16px;
+    border-radius: 4px;
+    
+    font-size: 2vh;
+   
+}
+.about-img{
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: auto;
+    border-radius: 50%;
+    
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.about-img:hover{
+    transform: scale(1.01);
+    transition: 0.19s;
+}
+
+.content{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+
+.active-content{
+    display: block;
+}
+
+.active-tab{
+    background: black;
+    border-radius: 5vh !important;
+    position: relative;
+}
+
+.single-tab:hover{
+    color:white !important;
+    background: rgb(112, 128, 144) !important;
+    border-radius: 5vh !important;
+    transition: 1s !important;
+}
+
+.active-tab h2{
+    color: white;
+}
+
+.content h2{
+    font-size: 3.5vh;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    width:50%;
+}
+
+.content h2:hover{
+    transform: scale(1.01);
+    transition: 0.19s;
+}
+
+.content p{
+    
+    font-size: 2vh;
+    line-height: 1.8;
+    font-weight: 400;
+    color: black;
+    width:auto;
+}
+
+.content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    width:100%;
+}
+
+
+.exp-column h2{
+    width:100%;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.exp-column span{
+    width:100%;
+    color: black;
+}
+
+.exp-column p{
+
+   font-size: 2vh;
+   line-height: 1.8;
+   font-weight: 400;
+   color: black;
+   width:auto;
+}
+*/
+
+    .about{
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-img{
+        height:80vh;
+    }
+    .row .column{
+        width: 100%;  
+    }
+    .tabs{
+        padding-top: 3rem;
+    }
+    .skills-row{
+        grid-template-columns: 1fr;
+    }
+    .exp-column p{
+        margin-top: 0px;
+        width:79%;
+     }

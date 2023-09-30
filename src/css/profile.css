@@ -1,0 +1,36 @@
+.Profile h2{
+    text-align: center;
+    font-size: 2vh !important;
+}
+.Profile{
+    width:70%;
+    margin: 0 auto;
+    margin-top:-70vh;
+}
+.Profile2{
+    
+   
+    margin: 0 auto !important;
+ 
+}
+
+
+.Profile2 p{
+    width:100%
+}
+
+.Profile button{
+    width: auto !important;
+    position:static;
+}
+.Profile label{
+    font-size: 2vh;
+    padding: 1vh;
+}
+
+.Profile textarea{
+    width:100% !important;
+    height:30vh;
+    margin-top: 5vh;
+
+}

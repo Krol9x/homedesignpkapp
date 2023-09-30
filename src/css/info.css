@@ -1,0 +1,97 @@
+/*
+.LeftInfo {
+    position: relative;
+    width: 50%;
+    height: 90vh;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.RightInfo {
+    position: relative;
+    width: 50%;
+    height: 80vh;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.RightInfo p{
+    font-size: 3vh;
+    background-color: white;
+    padding: 2vh;
+    width:70% !important;
+    float: left;
+    border: 2vh solid white;
+}
+
+.LeftInfo img {
+    max-height: 80vh;
+    
+    width: auto;
+    display: inline-block;
+    float:right;
+    border-top: 50%;
+    margin-top: 5vh;
+  
+}
+*/
+
+    .LeftInfo {
+        height: 0vh !important;
+    }
+    
+    .LeftInfo img {
+        float:left;
+        width: 80%;
+        margin: 0 auto !important;
+        margin-left: 10% !important;
+        padding:10vh
+        
+    }
+
+    .LeftInfo p{
+        height: 0vh !important;
+        border-left: none !important;
+        margin:0 auto;
+    }
+
+
+    .RightInfo {
+        position: relative;
+        width: 100%;
+        
+        height: auto;
+        display: flex;
+        
+       
+        text-align: center;
+    }
+
+    
+    .RightInfo p {
+        font-size: 3vh;
+        background-color: white;
+        padding: 2vh;
+        width: 70% !important;
+        margin: 0 auto;
+        border: 2vh solid white;
+        text-align: center;
+        
+    }
+    
+.Profile button{
+    width: 30% !important;
+}
+.Profile label{
+    background-color: black;
+    color:white;
+    padding: 2vh !important;
+    font-size: 2.5vh !important;
+    border-radius: 5px
+}
+
+.Profile label:hover{
+    background-color: #708090 !important;
+    
+}
