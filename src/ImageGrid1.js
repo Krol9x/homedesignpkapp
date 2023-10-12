@@ -10,7 +10,7 @@ const ImageGrid = () => {
   const [selectedImg, setSelectedImg] = useState(null);
   const [selectedDocId, setSelectedDocId] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-  const [numImages, setNumImages] = useState(6); // added state variable for number of images to display
+  const [numImages, setNumImages] = useState(9); // added state variable for number of images to display
 
   const handleDelete = (id, imageUrl) => {
     deleteFromFirebase(id)
@@ -48,7 +48,7 @@ const ImageGrid = () => {
 
   return (
     <>
-      <div className="img-grid1">
+      <div className="img-grid">
         {docs.slice(0, numImages).map((doc, index) => ( // updated mapping of docs to only display first numImages
           <motion.div
             className="img-wrap"
@@ -75,7 +75,7 @@ const ImageGrid = () => {
       </div>
       <div class="load-more-container">
         {docs.length > numImages && ( // added button to load more images
-          <button className="load-more1" onClick={() => setNumImages(numImages + 6)}>Pokaż wiecej</button>
+          <button className="load-more1" onClick={() => setNumImages(numImages + 9)}>Pokaż wiecej</button>
         )}
       </div>
       {selectedImg && (

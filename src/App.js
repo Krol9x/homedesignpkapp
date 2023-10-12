@@ -36,7 +36,7 @@ import slide3 from './images/slide3.jpg';
 import slide4 from './images/slide4.jpg';
 
 const App = () => {
-  const [loading, setloading] = useState(false);
+  const [loading, setloading] = useState(true);
   const [showParagraph1, setShowParagraph1] = useState(false);
   const [showParagraph2, setShowParagraph2] = useState(false);
   const [showParagraph3, setShowParagraph3] = useState(false);
@@ -47,14 +47,7 @@ const App = () => {
     { url: slide3, title: 'slide 3' },
     { url: slide4, title: 'slide 4' }
   ];
-    window.addEventListener("load", function () {
-      var loader = document.querySelector(".preloader");
-      var banner = document.querySelector(".Banner");
-    
-      loader.style.display = "none";
-      loader.style.animation = "none";
-      banner.style.animation = "1s ease-out 0s 1 slideInFromLeft";
-    });
+
     const containerStyles = {
         width: "100%",
         height: "100vh",
@@ -98,6 +91,8 @@ const App = () => {
     };
   }, []);
 
+ 
+
 
   useEffect(() => {
     
@@ -132,7 +127,7 @@ const App = () => {
   return (
 
     <div className="App">
-          <div className="preloader"></div>
+          
           <header className="App-header">
                 <Routes>
                   <Route path="/login" element={<Login />} />
@@ -159,7 +154,7 @@ const App = () => {
 
               <div className="Portfolio">
                 
-                <h1>Portfolio</h1>
+                <h1>PORTFOLIO</h1>
               <div className = "LinkPortfolio" >
               </div>
                 
@@ -170,7 +165,7 @@ const App = () => {
 
               <div className="Info" data-aos="slide-left" data-aos-duration="20">
                 
-              <h1>Kim Jestesmy</h1>
+              <h1>O FIRMIE</h1>
                 <div className = "LinkInfo" >
 
 
@@ -181,7 +176,7 @@ const App = () => {
               
 
               <div className="Oferta" data-aos="slide-left" data-aos-duration="20">
-        <h1>Oferta</h1>
+        <h1>WSPÓŁPRACA</h1>
         <div className="LinkOferta">
           <br />
           <OfferSlider />
@@ -211,14 +206,14 @@ const App = () => {
               
               <div className="Summary" data-aos="slide-left" data-aos-duration="20">
                 <div className = "LinkSummary">
-                <h1>Współpraca Krok Po Kroku</h1>
+                <h1>WSPÓŁPRACA KROK PO KROKU</h1>
                 </div>
                 <Summary />
               </div>
 
               <div className="Kontakt" data-aos="slide-left" data-aos-duration="20">
                 <div className = "LinkKontakt">
-                <h1>Kontakt</h1>
+                <h1>KONTAKT</h1>
                 </div>
                 <Contact />
               </div>

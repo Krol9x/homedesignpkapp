@@ -25,7 +25,7 @@
     text-align: center;
     height: auto;
     padding: 16px 32px;
-    animation: 3s ease-out 0s 1 slideInFromLeft;
+    
  }
 h3 {
     position: relative;
@@ -34,7 +34,7 @@ h3 {
     float: left;
     left: -27px;
     top: 16px;
-    font-style: italic;
+    
     padding: 16px 32px;
     animation: 3s ease-out 0s 1 slideInFromLeft;
 }
@@ -114,7 +114,7 @@ ul li:hover {
     font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 1755px){
+@media only screen and (max-width: 2180px){
     .nav-btn{
         visibility: visible;
         opacity: 1;
@@ -177,7 +177,7 @@ ul li:hover {
 
     .navheader h1 {
         position: relative;
-        font-size: 16px;
+        
         height: auto;
         float: left;
         
@@ -196,6 +196,12 @@ ul li:hover {
         font-style: italic;
         padding: 16px 32px;
         z-index: 999999;
+    }
+
+    .navheader h1 {
+        margin-left: 2vh;
+        animation:none;
+        font-size: 2vh !important;
     }
 
 }

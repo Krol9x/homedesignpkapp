@@ -3,13 +3,14 @@ import useFirestore, { deleteFromFirebase } from './useFirestore';
 import { motion } from 'framer-motion';
 import Modal from './Modal';
 
+
 const ImageGrid = () => {
   const { docs, deleteDoc } = useFirestore('images');
 
   const [selectedImg, setSelectedImg] = useState(null);
   const [selectedDocId, setSelectedDocId] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-  const [numImages, setNumImages] = useState(6); // added state variable for number of images to display
+  const [numImages, setNumImages] = useState(9); // added state variable for number of images to display
 
   const handleDelete = (id) => {
     deleteFromFirebase(id)
@@ -78,7 +79,7 @@ const ImageGrid = () => {
       </div>
       <div class="load-more-container" >
         {docs.length > numImages && (
-          <button className="load-more" onClick={() => setNumImages(numImages + 6)}>Pokaż więcej</button>
+          <button className="load-more" onClick={() => setNumImages(numImages + 9)}>Pokaż więcej</button>
         )}
       </div>
       {selectedImg && (

@@ -8,6 +8,7 @@
     padding: 0 12px;
     width: 98%;
     margin-left:1%;
+   
 }
 
 .gallery .pics{
@@ -20,6 +21,7 @@
     filter: opacity(0.4);
     transform: scale(1.01);
     transition: 1s;
+    
 }
 
 @media (max-width: 991px){
@@ -60,6 +62,7 @@
     transform: scale(0);
     overflow: hidden;
     z-index: 999;
+    
 }
 
 .model.open{

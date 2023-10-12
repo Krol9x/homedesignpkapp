@@ -41,7 +41,7 @@ export default function ContactUs() {
         <form onSubmit={sendEmail}>
           <div className="row pt-5 mx-auto">
             <div className="col-8 form-group mx-auto">
-              <input type="text" className="form-control" placeholder="Imie" name="name" required />
+              <input type="text" className="form-control" placeholder="Imię" name="name" required />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
               <input type="email" className="form-control" placeholder="Adres Email" name="email" required />
@@ -50,7 +50,7 @@ export default function ContactUs() {
               <input type="tel" className="form-control" placeholder="Numer Telefonu" name="telephone" required />
             </div>
             <div className="col-8 form-group pt-2 mx-auto">
-              <textarea className="form-control" id="" cols="30" rows="8" placeholder="Wiadomosc" name="mess"></textarea>
+              <textarea className="form-control" id="" cols="30" rows="8" placeholder="Wiadomość" name="mess"></textarea>
             </div>
             <div className="col-8 form-group mx-auto">
               <div className="form-check">

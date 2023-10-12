@@ -44,7 +44,7 @@ window.addEventListener('scroll', changebackground);
                             offset={-79}
                             duration={500}
                             onClick={showNavbar}>
-                      <li>Portfolio</li>
+                      <li>PORTFOLIO</li>
                       </Link>
                     <Link activeClass="active" 
                             to="Info"
@@ -53,7 +53,7 @@ window.addEventListener('scroll', changebackground);
                             offset={-79}
                             duration={500}
                             onClick={showNavbar}>
-                      <li>Info</li>
+                      <li>INFO</li>
                       </Link>
                       <Link activeClass="active" 
                             to="Oferta"
@@ -62,7 +62,7 @@ window.addEventListener('scroll', changebackground);
                             offset={-79}
                             duration={500}
                             onClick={showNavbar}>
-                      <li>Oferta</li>
+                      <li>WSPÓŁPRACA</li>
                       </Link>
                       <Link activeClass="active" 
                             to="Summary"
@@ -71,7 +71,7 @@ window.addEventListener('scroll', changebackground);
                             offset={-79}
                             duration={500}
                             onClick={showNavbar}>
-                      <li>Współpraca</li>
+                      <li>KROK PO KROKU</li>
                       </Link>
                       <Link activeClass="active" 
                             to="Kontakt"
@@ -80,7 +80,7 @@ window.addEventListener('scroll', changebackground);
                             offset={-79}
                             duration={500}
                             onClick={showNavbar}>
-                      <li>Kontakt</li>
+                      <li>KONTAKT</li>
                       </Link>
                   </ul>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>

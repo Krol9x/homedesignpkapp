@@ -76,7 +76,7 @@ function OfferSlider() {
         ))}
       </Slider>
       <div className="slick2">  
-                <h2>układ funkcjonalny kilka przykładów</h2>
+                <h2>układ funkcjonalny</h2>
 
       </div>
     </div>

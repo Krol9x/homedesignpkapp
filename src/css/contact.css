@@ -7,7 +7,9 @@
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
 }
-
+form{
+  margin-top: -20vh;
+}
 .form-check p {
   display: inline-block; /* This makes the p element take up only as much width as necessary */
   margin-left: 10px; /* Add some space between the checkbox and the label */
@@ -41,6 +43,7 @@
   display: flex; /* Use flexbox to align items */
   align-items: center; /* Vertically center the items */
   justify-content: flex-start; /* Move the items to the left side */
+
 }
 @media screen and (max-width:680px) {
     input::placeholder {

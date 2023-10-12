@@ -75,10 +75,10 @@ function OfferSlider3() {
         ))}
       </Slider>
       <div className="slick2">  
-                <h2>zestawienie mebli</h2>
-                <h2>lista produktów</h2>
+                
                 <h2>rzut</h2>
-                <h2>wizualizacja</h2>
+                <h2>projekt wizualizacji</h2>
+                <h2>lista produktów</h2>
       </div>
     </div>
   );

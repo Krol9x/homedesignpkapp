@@ -31,18 +31,18 @@
 
 
   .list-item {
-   margin-top: 10vh;
+  
   }
 
   .list p{
-    margin-top: 5vh;
+    
     
     font-size: 2.5vh;
     text-align: center;
   }
 
   .list p{
-    margin-top: 5vh;
+  
     
     font-size: 2vh;
     
@@ -76,14 +76,14 @@
   
   .list-item {
     position: relative;
-    margin-top: 10vh;
+   
   }
   
   .list-item::before {
     content: '';
     position: absolute;
     left: 50%; /* Center horizontally */
-    top: -5vh; /* Adjust the position above the paragraph */
+    top: -2.5vh; /* Adjust the position above the paragraph */
     transform: translateX(-50%); /* Center horizontally */
     height: 1vh; /* Adjust the size of the dot */
     width: 1vh; /* Adjust the size of the dot */
