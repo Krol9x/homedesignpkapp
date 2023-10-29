@@ -93,20 +93,20 @@ const App = () => {
 
  
   useEffect(() => {
-    const handleOrientationChange = () => {
-      // Check if the orientation is landscape
-      if (window.orientation === 90 || window.orientation === -90) {
-        // Display a message or prompt to the user
-        alert("Please rotate your device to portrait mode.");
+    function lockOrientation() {
+      if (window.screen && window.screen.lockOrientation) {
+        window.screen.lockOrientation('portrait');
       }
-    };
+    }
 
-    // Add an event listener for orientation change
-    window.addEventListener('orientationchange', handleOrientationChange);
+    lockOrientation();
 
-    // Clean up the event listener when the component unmounts
+    // Add an event listener for orientation changes (if needed).
+    window.addEventListener('orientationchange', lockOrientation);
+
     return () => {
-      window.removeEventListener('orientationchange', handleOrientationChange);
+      // Remove the event listener when the component unmounts.
+      window.removeEventListener('orientationchange', lockOrientation);
     };
   }, []);
 
