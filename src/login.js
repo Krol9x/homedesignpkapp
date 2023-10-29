@@ -11,7 +11,7 @@ const Login = () => {
   const [attempts, setAttempts] = useState(0);
   const [disabled, setDisabled] = useState(false);
 
-  const MAX_ATTEMPTS = 3;
+  const MAX_ATTEMPTS = 5;
   const COOLDOWN_TIME = 30 * 60 * 1000; // 30 minutes in milliseconds
 
   useEffect(() => {

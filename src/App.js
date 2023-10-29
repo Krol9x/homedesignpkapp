@@ -92,7 +92,25 @@ const App = () => {
   }, []);
 
  
+  useEffect(() => {
+    const handleOrientationChange = () => {
+      // Disable landscape (horizontal) orientation
+      if (window.orientation === 90 || window.orientation === -90) {
+        // Force the app to remain in portrait (vertical) mode
+        if (window.screen.orientation.lock) {
+          window.screen.orientation.lock('portrait');
+        }
+      }
+    };
 
+    // Add an event listener for orientation change
+    window.addEventListener('orientationchange', handleOrientationChange);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
 
   useEffect(() => {
     
