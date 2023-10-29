@@ -94,17 +94,10 @@ const App = () => {
  
   useEffect(() => {
     const handleOrientationChange = () => {
-      // Get the current orientation type
-      const currentOrientation = window.screen.orientation.type;
-
       // Check if the orientation is landscape
-      if (currentOrientation.includes('landscape')) {
-        // Lock the screen to portrait mode
-        if (window.screen.orientation.lock) {
-          window.screen.orientation.lock('portrait').catch((error) => {
-            console.error('Unable to lock orientation: ', error);
-          });
-        }
+      if (window.orientation === 90 || window.orientation === -90) {
+        // Display a message or prompt to the user
+        alert("Please rotate your device to portrait mode.");
       }
     };
 
