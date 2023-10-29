@@ -63,7 +63,7 @@ export default function ContactUs() {
 
             <div className="col-8 mx-auto">
               <div style={{ display: showCaptcha ? 'block' : 'none' }}>
-                <ReCAPTCHA className="captcha" sitekey="6LfF40cjAAAAAOFnC5SwA_Gqhg2425xtaaYrHNuP" onChange={onChange} required />
+                <ReCAPTCHA className="captcha" sitekey="6LeOO90oAAAAAMb0qvzDNM_nGZyzAJYedHYFMFuu" onChange={onChange} required />
                 <br></br>
               </div>
             </div>
